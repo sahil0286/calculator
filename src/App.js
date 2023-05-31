@@ -67,6 +67,22 @@ function App() {
               }
             }}/>
           </div>
+          <div>
+            <input type="button" value="1" onClick={e=> setValue(valueN + e.target.value)}/>
+            <input type="button" value="2" onClick={e=> setValue(valueN + e.target.value)}/>
+            <input type="button" value="3" onClick={e=> setValue(valueN + e.target.value)}/>
+            <input type="button" value="-" onClick={e=> {
+              console.log(valueN[valueN.length - 1])
+              if(valueN[valueN.length - 1]==="-" || valueN[valueN.length - 1]==="+" || valueN[valueN.length - 1]==="/" || valueN[valueN.length - 1]==="*")
+              {
+                setValue(valueN.slice(0, -1) + e.target.value)
+              }
+              else
+              {
+                setValue(valueN + e.target.value)
+              }
+            }}/>
+          </div>
 
         </form>
       </div>

@@ -12,3 +12,12 @@ body {
     background: rgb(210,176,233);
     background: radial-gradient(circle, rgba(210,176,233,1) 0%, rgba(245,192,192,1) 50%, rgba(138,229,235,1) 100%);
 }
+
+.calculator {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+

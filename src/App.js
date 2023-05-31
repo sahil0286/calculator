@@ -88,7 +88,7 @@ function App() {
             <input type="button" value="0" onClick={e=> setValue(valueN + e.target.value)}/>
             <input type="button" value="=" className='equal' onClick={e=> {
               console.log(valueN,valueN[0])
-              if(valueN==="" || valueN[0]==="-" || valueN[0]==="+" || valueN[0]==="/" || valueN[0]==="*")
+              if(valueN==="" || valueN[0]==="/" || valueN[0]==="*")
               {
                 setValue("")
               }

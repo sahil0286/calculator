@@ -51,5 +51,7 @@ form .display input {
     background-color: rgb(64, 64, 64);
 }
 
-
+form input.equal {
+    width: 123px;
+}
 

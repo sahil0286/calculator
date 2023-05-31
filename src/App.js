@@ -83,7 +83,26 @@ function App() {
               }
             }}/>
           </div>
-
+          <div>
+            <input type="button" value="00" onClick={e=> setValue(valueN + e.target.value)}/>
+            <input type="button" value="0" onClick={e=> setValue(valueN + e.target.value)}/>
+            <input type="button" value="=" className='equal' onClick={e=> {
+              console.log(valueN,valueN[0])
+              if(valueN==="" || valueN[0]==="-" || valueN[0]==="+" || valueN[0]==="/" || valueN[0]==="*")
+              {
+                setValue("")
+              }
+              else if(valueN[valueN.length - 1]==="-" || valueN[valueN.length - 1]==="+" || valueN[valueN.length - 1]==="/" || valueN[valueN.length - 1]==="*")
+              {
+                setValue(valueN.slice(0, -1))
+              }
+              else
+              {
+                // eslint-disable-next-line
+                setValue(eval(valueN))
+              }
+            }}/>
+          </div>
         </form>
       </div>
 

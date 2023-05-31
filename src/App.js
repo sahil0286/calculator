@@ -1,8 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
+import "./App.css"
 
 function App() {
+  const [valueN, setValue] = useState("");
   return (
-    <div>App</div>
+    <div className="container">
+      <div className="calculator">
+        <form action="">
+          <div className='display'>
+            <input type="text" value={valueN} />
+          </div>
+
+        </form>
+      </div>
+
+    </div>
   )
 }
 

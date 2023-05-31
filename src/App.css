@@ -43,5 +43,13 @@ form .display {
     margin: 5px 0px 15px 0px;
 }
 
+form .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 40px;
+    padding: 5px 10px;
+    background-color: rgb(64, 64, 64);
+}
+
 
 

@@ -33,5 +33,9 @@ form input {
     cursor: pointer;
 }
 
+form input[type="button"]:hover {
+    background-color: rgb(137, 22, 245);
+}
+
 
 
